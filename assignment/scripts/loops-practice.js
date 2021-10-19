@@ -17,7 +17,7 @@ console.log('count from 0 to 5');
 for (let i=0; i<6; i++) {
   console.log(i);
 }
-i had to change the index to beig less than 6
+// i had to change the index to beig less than 6
 
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
@@ -26,7 +26,7 @@ console.log('count from 3 to 5');
 for (let i=3; i<6; i++) {
   console.log(i);
 }
-i had to change the index to being equal to 3
+// i had to change the index to being equal to 3
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
@@ -46,10 +46,8 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
 
-const stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
-let  i= "0";
-for (let 5 of stars) {
-  stars += 5;
+for ( someStars of stars) {
+ console.log('for of loop', someStars);
 }
 
 
@@ -58,19 +56,17 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
-while (i<6) {
-  stars += "the star is" +i;
+let i = 0;
+while ( i < stars.length) {
+  console.log('while loop:', stars[i]);
   i++;
 }
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-while (i<6) {
-  numbers += "the number is" +i;
-  i++;
-}
+let start = 0;
+let max = 5;
+while (start <= max) {
+  console.log(start);
+  start++;
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
-while (i<11) {
-  numbers += "the number is" +i;
-  i++;
-}
